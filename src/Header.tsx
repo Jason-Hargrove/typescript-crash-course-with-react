@@ -6,9 +6,11 @@ export interface Props {
 const Header = (props: Props) => {
   return (
     <header>
-      <h1>{props.title}</h1>
+      <h1 style={{ color: props.color ? props.color : 'blue' }}>
+        {props.title}
+      </h1>
     </header>
   )
 }
 
-// export default Header;
+export default Header
